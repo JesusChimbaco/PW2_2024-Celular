@@ -1,0 +1,11 @@
+INSERT INTO celular (marca, ram, almacenamiento, camara_principal) VALUES ('Xiaomi', 8, 256, '200mpx');
+INSERT INTO celular (marca, ram, almacenamiento, camara_principal) VALUES ('Samsung', 12, 512, '108mpx');
+INSERT INTO celular (marca, ram, almacenamiento, camara_principal) VALUES ('Apple', 6, 256, '48mpx');
+INSERT INTO celular (marca, ram, almacenamiento, camara_principal) VALUES ('OnePlus', 8, 128, '50mpx');
+INSERT INTO celular (marca, ram, almacenamiento, camara_principal) VALUES ('Huawei', 8, 256, '50mpx');
+INSERT INTO celular (marca, ram, almacenamiento, camara_principal) VALUES ('Google', 8, 128, '50mpx');
+INSERT INTO celular (marca, ram, almacenamiento, camara_principal) VALUES ('Motorola', 6, 128, '108mpx');
+INSERT INTO celular (marca, ram, almacenamiento, camara_principal) VALUES ('Sony', 12, 512, '64mpx');
+INSERT INTO celular (marca, ram, almacenamiento, camara_principal) VALUES ('Oppo', 8, 256, '48mpx');
+INSERT INTO celular (marca, ram, almacenamiento, camara_principal) VALUES ('Realme', 12, 256, '108mpx');
+INSERT INTO celular (marca, ram, almacenamiento, camara_principal) VALUES ('Vivo', 8, 128, '64mpx');
