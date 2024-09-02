@@ -4,9 +4,7 @@ package co.edu.uceva.demo20242.controller;
 import co.edu.uceva.demo20242.model.entities.Celular;
 import co.edu.uceva.demo20242.model.service.CelularServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -18,8 +16,29 @@ public class CelularRestController {
     private CelularServiceImpl celularService;
 
     @GetMapping("/celulares")
-    public List<Celular> listar(){
+    public List<Celular> listar(){ // Metodo que lista celular.
         return this.celularService.listar();
+    }
+
+    @GetMapping("/celulares/{id}")
+    public Celular buscaCelular(@PathVariable long id){ //Metodo que busca celular por id.
+        return this.celularService.findById(id);
+    }
+
+    @PostMapping("/celular")
+    public Celular guardarCelular(@RequestBody Celular celular){ //Metodo que guarda celular.
+        return this.celularService.save(celular);
+    }
+
+    @PutMapping("celular")
+    public Celular actualizarCelular(@RequestBody Celular celular){ //Metodo que actualiza celular.
+        return this.celularService.save(celular);
+    }
+
+    @DeleteMapping("/celular/{id}")
+    public void eliminarCelular(@PathVariable long id){
+        Celular celular = this.celularService.findById(id); //Encuantra el celular por id.
+        this.celularService.delete(celular); //Lo elimina.
     }
 
 }

@@ -12,7 +12,7 @@ public class Celular { //Definimos las propiedades de un celular.
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private long id;
     private String marca;
     private int ram;
     private int almacenamiento;
